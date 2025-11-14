@@ -11,18 +11,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Use Node 18
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-
-      - name: Install hexo-cli
-        run: npm install -g hexo-cli
+          node-version: 18
 
       - name: Install dependencies
         run: npm install
 
-      - name: Generate site
+      - name: Build Hexo site
         run: npx hexo generate
 
       - name: Deploy to gh-pages

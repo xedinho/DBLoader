@@ -4,3 +4,4 @@ language: en
 url: https://xedinho.github.io
 root: /DBLoader/
 per_page: 10
+theme: aurora
