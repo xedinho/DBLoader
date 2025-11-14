@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <% include _partial/head %>
+</head>
+<body class="<%= (config.theme && config.theme.dark) ? 'dark' : '' %>">
+  <div class="container">
+    <%- body %>
+  </div>
+  <script type="module" src="<%= url_for('/js/main.js') %>"></script>
+</body>
+</html>

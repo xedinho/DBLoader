@@ -1,0 +1,13 @@
+{
+  "name": "empalar-db-loader-hexo-aurora",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "hexo server",
+    "build": "hexo generate",
+    "deploy": "hexo deploy"
+  },
+  "dependencies": {
+    "hexo": "^6.0.0"
+  }
+}
